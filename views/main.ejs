@@ -14,29 +14,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Raleway&display=swap" rel="stylesheet">
     <!------------------>
 
+    <!-- meta -->
+    <meta property="og:url" content="https://www.somang.store/">
+    <meta property="og:title" content="Furniture & Product Design Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:image" src="img_url.png">
+    <meta property="og:description" content="Soyoung Park">
 
 
-
-  </head>
+</head>
 <body style="overflow: scroll;">
 
     <div id="anchor_home" style="width: 100%; height: 1px;"></div>
-
     
-    
-    <nav class="navbar navbar-expand-md bg-body-tertiary" style="width: 88%; margin-left: 6%; margin-right: 6%; background-color:white !important;"> <!-- expand-md에서 md, lg, xl크기 이하가 되면 햄버거메뉴 생기는 방식 -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary" style="width: 90%; margin-left: 5%; margin-right: 5%; background-color:white !important; position: fixed; z-index: 1;"> <!-- expand-md에서 md, lg, xl크기 이하가 되면 햄버거메뉴 생기는 방식 -->
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="font-size: 14px !important;">SOYOUNG PARK</a>
+          <a class="navbar-brand" href="#" style="font-size: 16px !important;">&nbsp;SOYOUNG PARK</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="width: 40px; height: 30px;">
             <span class="navbar-toggler-icon" style="width: 20px; height: 20px; margin-bottom: 5.5px; margin-left: -2.5px;"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav" style="float: right; font-size: 12px;">
-              <a class="nav-link" href="#">HOME</a>
-              <a class="nav-link" href="#">ABOUT</a>
-              <a class="nav-link" href="#">PORTFOLIO</a>
-              <a class="nav-link" href="#">BIO</a>
-              <a class="nav-link" href="#">CONTACT</a>
+            <div class="navbar-nav" style="float: right; font-size: 15px;">
+              <a id="menu_home" class="nav-link">HOME</a>
+              <a id="menu_about" class="nav-link">ABOUT</a>
+              <a id="menu_portfolio" class="nav-link">PORTFOLIO</a>
+              <a id="menu_bio" class="nav-link">BIO</a>
+              <a id="menu_contack" class="nav-link">CONTACT</a>
               <!-- <a class="nav-link active" aria-current="page" href="#">Home</a>
               <a class="nav-link" href="#">Pricing</a>
               <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
@@ -44,6 +47,8 @@
           </div>
         </div>
     </nav>
+
+    <div style="width: 100%; height: 60px;"></div>
 
     <!-- <div style="width: 100%; height: 55px;"></div> 가려진 부분 -->
 
@@ -541,6 +546,18 @@
 
     <!---------------------------------->
 
+    <div class="vertical_line"></div>
+
+    <div id="anchor_bio" style="width: 100%; height: 1px;"></div>   
+
+    <div style="width: 100%; height: 21px; margin-bottom: 53px;"></div>
+
+    <div style="margin-bottom: 50px;">
+        <h2 style="text-align: center;">
+            <span id="bio">03 bio</span>
+        </h2>
+    </div>
+
     <!------------ bio  ------------>
 
     <div class="bio_outline">
@@ -1034,7 +1051,6 @@
     </div>
 
 
-
     <div id="blank" style="width: 100%; height: 200px;"></div>
 
     <div id="instagram">
@@ -1051,11 +1067,42 @@
 
 
 
+    <script>
+        const button_click_for_more = document.querySelector("#button_click_for_more")
+        const menu_home = document.querySelector("#menu_home")
+        const menu_about = document.querySelector("#menu_about")
+        const menu_portfolio = document.querySelector("#menu_portfolio")
+        const menu_bio = document.querySelector("#menu_bio")
+        const menu_contack = document.querySelector("#menu_contack")
 
 
+        const scroll_home = document.querySelector("#anchor_home")
+        const scroll_about = document.querySelector("#anchor_about")
+        const scroll_portfolio = document.querySelector("#anchor_portfolio")
+        const scroll_bio = document.querySelector("#anchor_bio")
+        const scroll_contack = document.querySelector("#anchor_contack")
 
 
+        button_click_for_more.onclick = function(){
+            window.scroll({top:scroll_bio.offsetTop, behavior:'smooth'})
+        }
 
+        menu_home.onclick = function(){
+            window.scroll({top:scroll_home.offsetTop, behavior:'smooth'})
+        }
+        menu_about.onclick = function(){
+            window.scroll({top:scroll_about.offsetTop, behavior:'smooth'})
+        }
+        menu_portfolio.onclick = function(){
+            window.scroll({top:scroll_portfolio.offsetTop, behavior:'smooth'})
+        }
+        menu_bio.onclick = function(){
+            window.scroll({top:scroll_bio.offsetTop, behavior:'smooth'})
+        }
+        menu_contack.onclick = function(){
+            window.scroll({top:scroll_contack.offsetTop, behavior:'smooth'})
+        }
+    </script>
 
 
 

@@ -28,19 +28,11 @@ https://ninjaggobugi.tistory.com/12
 app.use(express.static('image'))
 
 
-
-
 // index page
 app.get('/', function(req, res) {
     res.render('main');
 });
   
-
-
-
-
-
-
 
 
 
