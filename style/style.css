@@ -1291,24 +1291,32 @@
     font-size:15px; 
     line-height:1.2em; 
     font-weight: bold;
+
+    font-family: 'Raleway', sans-serif;/* 글꼴 추가 */
 }
 
 .font14{
     font-size:14px; 
     line-height:1.2em;
     margin: 0;
+
+    font-family: 'Raleway', sans-serif;/* 글꼴 추가 */
 }
 
 .font11{
     font-size:11px; 
     line-height:1.2em; 
     margin: 0;
+
+    font-family: 'Raleway', sans-serif;/* 글꼴 추가 */
 }
 
 .font11_li{
     font-size:11px; 
     line-height:1.2em; 
     margin: 0;
+
+    font-family: 'Raleway', sans-serif;/* 글꼴 추가 */
 }
 
 
@@ -1324,6 +1332,8 @@
         line-height:1.2em; 
         font-weight: bold;
         text-align: center;
+
+        font-family: 'Raleway', sans-serif;/* 글꼴 추가 */
     }
 
     .bio_outline{
@@ -1339,6 +1349,8 @@
         zoom: 0.9;
         line-height:1.2em;
         margin: 0;
+
+        font-family: 'Raleway', sans-serif;/* 글꼴 추가 */
     }
     
     .font11{
@@ -1346,6 +1358,8 @@
         zoom: 0.7; 
         line-height:1.2em; 
         margin: 0;
+
+        font-family: 'Raleway', sans-serif;/* 글꼴 추가 */
     }
 
     .font11_li{
@@ -1353,6 +1367,8 @@
         zoom: 0.7;
         line-height:1.2em; 
         margin: 0;
+
+        font-family: 'Raleway', sans-serif;/* 글꼴 추가 */
     }
 }
 
